@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Voting</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="Resources/Swiper11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/voting.css" />
+
+    <script src="Resources/Swiper11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import config from './scripts/config.js';
+        window.CONFIG = config;
+    </script>
+    <script src="scripts/voting.js" defer></script>
+    <script src="scripts/general.js" defer></script>
+
+</head>
+
+<body onload="fInitialization()">
+    <div class="MarginedBox">
+
+        <div class="TabContainer">
+            <button class="TabRole" onclick="fOpenTab(0)">King</button>
+            <button class="TabRole" onclick="fOpenTab(1)">Queen</button>
+        </div>
+        <div class="swiper ProfileSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

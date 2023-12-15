@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.MarginedBox {
+    margin: auto;
+    height: 90%;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 5% 0 5% 0;
+        width: 100%;
+    }
+    .MarginedBox {
+        width: 90%;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+    body {
+        max-width: 100%;
+        align-content: center;
+    }
+    .MarginedBox {
+        width: 35%;
+    }
+}
+
+.TabContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin: 4% 5% 4% 5%;
+    position: relative;
+}
+
+.TabRole {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000000;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.TabRolePressed {
+    background-color: #bcced7;
+    color: black;
+    border: 1px solid black;
+    box-shadow: none;
+}
+
+.ProfileSwiper {
+    margin: 0px 5% 0px 0px;
+    width: 90%;
+    height: 600px;
+    padding-right: 20px;
+    padding-left: 5%;
+    padding-bottom: 10px;
+}
+.ProfileSwiper .swiper-wrapper:not(.PhotoSwiper .swiper-wrapper) {
+    width: 100%;
+    height: 95%;
+    margin-bottom: 20px;
+}
+
+.ProfileSwiper .swiper-wrapper .swiper-slide:not(.PhotoSwiper .swiper-wrapper .swiper-slide) {
+    background-color: #6576fa;
+    margin: 0px 5px 0px 0px;
+    border: 1px inset #949494;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.ProfileSwiper .swiper-pagination {
+    position: relative;
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+}
+
+.PhotoSwiper {
+    margin: 5px 5% 5px 5%;
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.PhotoSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+.PhotoSwiper .swiper-wrapper .swiper-slide {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px inset #8a8a8a;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+.PhotoPagination{
+    position: absolute;
+    z-index: 100;
+  
+}
+
+p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 7%;
+    margin-bottom: 15px;
+}
+
+.Actions {
+    margin-left: 7%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.Actions img {
+    margin: 5px;
+    object-fit: fill;
+    height: 100%;
+    width: 13%;
+    border: none !important;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.VoteBTN {
+    background-color: #7ff98a;
+    border-color: #919191;
+    font-size: 1.2em;
+    margin-left: 2%;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.votedcard{
+    background-color:#8effa4 !important;
+    border-color: #c2c2c2 !important;
+}
+
+.TabRolePressed {
+    background-color: #bcced7;
+    color: black;
+    border: 1px solid black;
+    box-shadow: none;
+}

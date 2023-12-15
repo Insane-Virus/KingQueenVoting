@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Live Score Votes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="styles/livescore.css">
+    <script type="module">
+        import config from './scripts/config.js';
+        window.CONFIG = config;
+    </script>
+    <script src="scripts/general.js" defer></script>
+    <script src="scripts/livescore.js" defer></script>
+</head>
+
+<body onload="fInit()">
+    <div class="MarginedBox">
+        <div class="Profiles">
+            <div class="ff">
+                <img class="refresh" src="Media/Images/refresh.png" onclick="fRefresh()">
+                <h2>Males</h2>
+            </div>
+            
+            <div class="Males">
+            </div>
+            <h2>Females</h2>
+            <div class="Females">
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

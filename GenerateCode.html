@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module">
+        import config from './scripts/config.js';
+        window.CONFIG = config;
+    </script>
+    <script src="scripts/general.js" defer></script>
+    <title>Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .cKey{
+            color: red;
+        }
+        h4{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Input numbers From 1 to 900</h1>
+
+    <label for="num1">From</label>
+    <input type="number" id="num1">
+
+    <label for="num2">To</label>
+    <input type="number" id="num2">
+
+    <button onclick="Generate()">Generate</button>
+    <button class="cKey" onclick="GetKey(event)">Get Key</button>
+    <h4>Check the results in console. Hot key F12.</h4>
+    <div id="result"></div>
+
+    <script>
+        function Generate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var codesdiv = document.getElementById('result');
+            // Check if the input is a valid number
+
+            if ((num1 < 901 && num1 > 0) && (num2 < 901 && num2 > 0)) {
+                for (let i = num1; i <= num2; i++) {
+                    zero(i);
+                }
+            }
+
+        }
+        function GetKey(event)
+        {
+            console.log(GenerateKey());
+            event.currentTarget.disabled = true;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+:root {
+    --text-in-card-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'InsFF';
+    /* Choose a unique name for your font */
+    src: url('../Media/Fonts/RaillyRegular.otf') format('opentype');
+    /* Specify the path to your font file */
+    /* Add additional font formats if needed, e.g., format('ttf') */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.MarginedBox {
+    margin: 10px auto 10px auto;
+    height: 90%;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow:
+        5px 5px 0 0 rgba(255, 255, 255, 0.3) inset,
+        /* Left */
+        5px 5px 0 0 rgba(255, 255, 255, 0.4);
+    /* Right */
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom left,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 25%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0) 75%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+/*box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.4);
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 5px inset rgba(255, 255, 255, 0.4);
+    border-top: 5px inset rgba(180, 180, 180, 0.4);*/
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 5% 0 5% 0;
+        width: 100%;
+        background-image: url('../Media/Images/background-mobile.jpg');
+        /* Replace with the path to your image */
+    }
+
+    .MarginedBox {
+        width: 90%;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+    body {
+        max-width: 100%;
+        align-content: center;
+        background-image: url('../Media/Images/background-desktop.jpg');
+    }
+
+    .MarginedBox {
+        width: 35%;
+    }
+}
+
+.Profiles {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 4%;
+    overflow-y: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Profile {
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 7px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.BL {
+    justify-content: center;
+}
+
+img {
+    border-radius: 15px;
+    width: 25%;
+    height: 100%;
+    border: 1px inset #8a8a8a;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h2 {
+    color: var(--text-in-card-color);
+}
+
+h3,
+h5 {
+    margin: 0px 0px 0px 10px;
+    padding: 10px 10px 0px 10px;
+    text-align: left;
+}
+
+.ff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    direction: rtl;
+}
+
+#i1 {
+    border: 4px inset red;
+    background-color: gold;
+}
+
+#i2 {
+    border: 4px inset blue;
+    background-color: silver;
+}
+
+#i3 {
+    border: 4px inset green;
+    background-color: brown;
+}
+
+.refresh {
+    border: none;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    width: 3em;
+    height: 3em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+span {
+    float: right;
+}
+
+.rotate-image {
+    transform: rotate(0deg);
+    animation: rotateAnimation 0.5s linear;
+}
+
+@keyframes rotateAnimation {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
